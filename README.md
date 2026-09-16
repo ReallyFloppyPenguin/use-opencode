@@ -6,10 +6,20 @@ implements.**
 
 ## Why
 
-Planning and reviewing are what a large reasoning model is good at. Typing out
-the implementation is what a fast coding agent is good at. This skill keeps each
-one doing its own job, and — importantly — makes Claude actually *check* the
-result instead of trusting the handoff.
+**To spend your Claude tokens where they actually matter.**
+
+Most of the tokens in a coding session get burned on the boring part — typing
+out the implementation. That part does not need a frontier model. Planning the
+change and reviewing the diff do.
+
+So this skill puts Claude in charge and sends the typing somewhere cheap:
+opencode pointed at a budget API model, or a model you self-host and run for
+free. Claude stays in the loop for the two jobs worth paying for — deciding what
+to build, and checking what came back — while the bulk of the output tokens come
+from the cheap model.
+
+You keep frontier-quality judgement on both ends of the task, and your Claude
+usage goes a lot further.
 
 ## What it does
 
@@ -26,6 +36,11 @@ result instead of trusting the handoff.
 
 - [Claude Code](https://claude.com/claude-code)
 - [opencode](https://opencode.ai) on your `PATH`, already configured with a model
+
+The skill uses whatever model opencode defaults to, so set that to the cheap or
+self-hosted one — that is the whole point. opencode talks to hosted APIs and to
+local runtimes like Ollama or anything OpenAI-compatible, so a model running on
+your own machine costs you nothing per token.
 
 ## Install
 
