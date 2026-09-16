@@ -44,23 +44,41 @@ your own machine costs you nothing per token.
 
 ## Install
 
-Clone into your Claude Code skills directory.
+This repo is a Claude Code plugin marketplace, so installing is two commands
+inside Claude Code:
+
+```
+/plugin marketplace add ReallyFloppyPenguin/use-opencode
+/plugin install use-opencode@reallyfloppypenguin
+```
+
+Or from your terminal:
+
+```bash
+claude plugin marketplace add ReallyFloppyPenguin/use-opencode
+claude plugin install use-opencode@reallyfloppypenguin
+```
+
+That is it — no manual file copying, and `/plugin update` picks up new versions
+later.
+
+<details>
+<summary>Manual install without the plugin system</summary>
+
+Copy the skill directory straight into your skills folder.
 
 **User-global** (available in every project):
 
 ```bash
-git clone https://github.com/ReallyFloppyPenguin/use-opencode \
-  ~/.claude/skills/use-opencode
+git clone https://github.com/ReallyFloppyPenguin/use-opencode /tmp/use-opencode
+cp -r /tmp/use-opencode/skills/use-opencode ~/.claude/skills/use-opencode
 ```
 
-**Single project:**
+**Single project** — same, but into `.claude/skills/use-opencode`.
 
-```bash
-git clone https://github.com/ReallyFloppyPenguin/use-opencode \
-  .claude/skills/use-opencode
-```
+Restart Claude Code afterward.
 
-Restart Claude Code.
+</details>
 
 ## Usage
 

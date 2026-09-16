@@ -1,0 +1,15 @@
+{
+  "name": "use-opencode",
+  "displayName": "use-opencode",
+  "description": "Plan with Claude, implement with opencode, verify the result. Keeps frontier-model judgement on planning and review while a cheap or self-hosted model does the typing.",
+  "version": "1.0.0",
+  "author": {
+    "name": "ReallyFloppyPenguin",
+    "url": "https://github.com/ReallyFloppyPenguin"
+  },
+  "homepage": "https://github.com/ReallyFloppyPenguin/use-opencode",
+  "repository": "https://github.com/ReallyFloppyPenguin/use-opencode",
+  "license": "MIT",
+  "keywords": ["opencode", "skill", "planning", "code-review", "token-saving", "self-hosted"],
+  "skills": "./skills"
+}

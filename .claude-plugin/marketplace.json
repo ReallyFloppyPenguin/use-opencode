@@ -1,0 +1,18 @@
+{
+  "$schema": "https://code.claude.com/schemas/marketplace.json",
+  "name": "reallyfloppypenguin",
+  "owner": {
+    "name": "ReallyFloppyPenguin",
+    "url": "https://github.com/ReallyFloppyPenguin"
+  },
+  "description": "Claude Code plugins by ReallyFloppyPenguin.",
+  "plugins": [
+    {
+      "name": "use-opencode",
+      "source": "./",
+      "description": "Plan with Claude, implement with opencode, verify the result. Keeps frontier-model judgement on planning and review while a cheap or self-hosted model does the typing.",
+      "category": "productivity",
+      "license": "MIT"
+    }
+  ]
+}
